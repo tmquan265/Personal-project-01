@@ -589,7 +589,9 @@ h3,h6 {
         text-align: center;
         justify-content: space-between;
         flex-wrap: wrap;
-        width: 100%;
+    }
+    .others__contact__item p {
+        display: inline-block;
     }
 /* Others Responsive */
     @media only screen and (max-width:992px)  {
