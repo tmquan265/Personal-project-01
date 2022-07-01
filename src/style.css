@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -53,6 +54,8 @@ h3,h6 {
         color: #fff;
         font-size: 16px;
         display: block;
+        margin: 0;
+        margin-top: 10px;
     }
     .header__nav ul li a:hover {
         color: #57e2b2;
@@ -101,6 +104,9 @@ h3,h6 {
         }
         .header__nav ul li {
             width: 100%;
+        }
+        .header__nav ul li a {
+            margin: 0px;
         }
         .header__nav ul li ul {
             position: relative;
@@ -344,7 +350,7 @@ h3,h6 {
     .specs__item h3 {
         font-size: 30px;
     }
-    .specs__item h2, a {
+    .specs__item h2, .specs__item a {
         margin: 20px 0;
         font-size: 25px;
         color: #fff;
@@ -484,4 +490,120 @@ h3,h6 {
         font-size: 25px;
         line-height: 35px;
         color: #fff;
+    }
+/* Others */
+    .others {
+        margin: 50px 100px;
+    }
+    .others a {
+        color: #fff;
+    }
+    .others a:hover {
+        color: #57e2b2;
+    }
+    .others__container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .others__item {
+        padding: 0 20px;
+        width: 25%;
+    }
+    .others__item h4  {
+        font-size: 20px;
+        line-height: 35px;
+        color: #fff;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+    }
+    .others__about span {
+        font-size: 35px;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 2px;
+        line-height: 45px;
+        display: inline-block;
+        margin-bottom: 30px;
+    }
+    .others__about > span > a {
+        color: #57e2b2;
+    }
+    .latest__item {
+        display: grid;
+        grid-template-columns: 76px 1fr;
+        grid-gap: 15PX;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .latest__item img,.instagram  img {
+        display: block;
+        max-width: 100%;
+    }
+    .latest__item a {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 28px;
+    }
+    .instagram {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    .form {
+        display: flex;
+        border-bottom: 1px solid #b9b9b9;
+        width: 90%;
+        margin-top: 50px;
+    }
+    .button {
+        user-select: none;
+        background-color: transparent;
+        border: 1px solid transparent;
+        font-size: 17px;
+        color: #fff;
+        line-height: 1.5;
+        cursor: pointer;
+    }
+    .email {
+        background: transparent;
+        border: none;
+        padding: 5px 0px;
+        font-size: 16px;
+        line-height: 30px;
+        width: 100%;
+    }
+    ::placeholder {
+        color: #fff;
+        opacity: 1;
+    }
+    /* Footer */
+    .others__contact {
+        margin-top: 80px;
+    }
+    .others__contact__container {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+/* Others Responsive */
+    @media only screen and (max-width:992px)  {
+        .others__item {
+            width: 50%;
+            margin-top: 30px;
+        }
+        .others__contact__item, .others__contact__item-large {
+            width: 100%;
+            margin-top: 10px;
+        }
+    }
+    @media only screen and (max-width:576px) {
+        .others__item {
+            width: 100%;
+        }
     }
